@@ -103,7 +103,7 @@ def import_convert():
                                 'WorkplacePromiseDifference', 'CoercedToContinueWork',
                                 'LaborExploitPastThreeMonths', 'ERVisits', 'JailNights',
                                 'HospitalNights', 'HealthIssuesFam'], inplace=True)
-    enrollment_df['EntryDate'] += ' 12:00:00'
+    
     enrollment_df.to_csv('Enrollment.csv', index=None)
     #  Enrollment complete
 
